@@ -4,7 +4,14 @@ const MAX_NUMBER = 35;
 let amount_try = 0;
 
 // debugger
-function numbers(number, amount_try, MAX_TRY) {
+/**
+ * get number more then 15 and less then 35 and remainder 6
+ * @param {number} number 
+ * @param {number} amount_try 
+ * @param {number} MAX_TRY 
+ * @returns {number | string}
+ */
+function getNumbers(number, amount_try, MAX_TRY) {
     const userInputNumber = prompt("Enter Number:");
 
     if (
@@ -32,11 +39,11 @@ function numbers(number, amount_try, MAX_TRY) {
     }
 }
 
-console.log(numbers(24, 2, 3));
-console.log(numbers(30, 4, 1));
-console.log(numbers(18, 2, 2));
-console.log(numbers(40, 2, 2));
-console.log(numbers(17, 2, 2));
+console.log(getNumbers(24, 2, 3));
+console.log(getNumbers(30, 4, 1));
+console.log(getNumbers(18, 2, 2));
+console.log(getNumbers(40, 2, 2));
+console.log(getNumbers(17, 2, 2));
 // console.log(numbers(30,0,2));
 // console.log(numbers(32,1,2));
 // console.log(numbers(2,4,2));
